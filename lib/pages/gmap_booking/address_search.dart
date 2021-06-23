@@ -3,6 +3,8 @@ import 'package:andi_taxi/provider/place_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'gmap_booking_view.dart';
+
 class AddressSearch extends SearchDelegate<Suggestion> {
   AddressSearch(this.sessionToken) :
     this.apiClient = PlaceApiProvider(sessionToken);
@@ -58,6 +60,7 @@ class AddressSearch extends SearchDelegate<Suggestion> {
                     title:
                         Text((snapshot.data![index]).description),
                     onTap: () {
+
                       close(context, snapshot.data![index]);
                     },
                   ),

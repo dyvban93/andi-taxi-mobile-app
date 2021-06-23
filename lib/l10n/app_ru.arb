@@ -1,3 +1,98 @@
 {
-    "helloWorld": "Hola Mundo!"
-}
+    "helloWorld": "Привет Мир!",
+  
+    "@welcome": {
+      "description": "Welcome UI : lib/ui/welcome.dart"
+    },
+  
+    "signUp": "Создат",
+    "signIn": "Войти",
+  
+    "signUpChoice": "Кем вы хотите зарегистрироваться?",
+    "signUpChoiceClient": "Клиент",
+    "signUpChoiceDriver": "Водитель",
+  
+    "pvStep1Title": "Установите ваш местоположение",
+    "pvStep1Description": "Включите общий доступ к местоположению, чтобы ваш водитель мог видеть, где вы находитесь",
+    "pvStep2Title": "Установите ваш местоположение",
+    "pvStep2Description": "Включите общий доступ к местоположению, чтобы ваш водитель мог видеть, где вы находитесь",
+    "pvStep3Title": "Установите ваш местоположение",
+    "pvStep3Description": "Включите общий доступ к местоположению, чтобы ваш водитель мог видеть, где вы находитесь",
+  
+    "@signIn": {
+      "description": "Sign In UI : lib/pages/sign_in/sign_in_form.dart , lib/pages/sign_in/sign_in_page.dart"
+    },
+  
+    "signInFailure": "Ошибка Входа В Систему",
+    "or": "или",
+    "dontHaveAccount": "У вас нет аккаунта?",
+    "phoneNumber": "Номер телефона",
+    "invalidPhoneNumber": "Неверный номер телефона",
+  
+    "@signCode": {
+      "description": "Sign Code UI : lib/pages/sign_code/sign_code_form.dart , lib/pages/sign_code/sign_code_page.dart"
+    },
+    
+    "signCode": "Код",
+    "signCodeFailure": "Сбой аутентификации",
+    "codeSentBySMS": "Код, отправленный по СМС на",
+    "resentCode": "Повторно отправил код",
+  
+    "@signUpClient": {
+      "description": "Sign Up Client UI : lib/pages/sign_up_client/sign_up_client.dart, lib/pages/sign_up_client_page.dart"
+    },
+  
+    "signUpFailure": "Ошибка Регистрации",
+    "alreadyHaveAccount": "У вас уже есть аккаунт? ",
+    "name": "Имя",
+  
+    "@signUpDriver": {
+      "description": "Sign Up Driver UI : lib/pages/sign_up_client/sign_up_driver_form.dart, lib/pages/sign_up_driver_page.dart"
+    },
+  
+    "personalInformations": "Личная информация",
+    "driverInformations": "Информация о водителе",
+    "carInformations": "Информация об автомобиле",
+    "rcIdentificationNumber": "Идентификационный номер RC",
+    "residenceAddress": "Адрес проживания",
+    "realResidenceAddress": "Реальный Адрес Проживания",
+    "registrationNumber": "Регистрационный номер",
+    "model": "Модель",
+  
+    "@home": {
+      "description": "Home UI : lib/pages/home/home_page.dart"
+    },
+  
+    "home": "Главный экран",
+    "titleBTAddressSelection": "Выбор адреса",
+    "titleBTDetails": "Выбор тарифа",
+    "titleBTPayment": "Способы оплаты",
+  
+    "@gmapHome": {
+      "description": "GMap Home UI : lib/pages/gmap_home/gmap_home_page.dart"
+    },
+  
+    "actualPosition": "Место назначения",
+    "bookTaxi": "Выбрать место",
+  
+    "@gmapBookingTaxi": {
+      "description": "GMap Booking Taxi : lib/pages/gmap_booking_taxi/gmap_booking_taxi.dart"
+    },
+  
+    "paymentMethods": "Способы оплаты",
+    "cash": "Наличные",
+  
+    "carStandard": "Стандарт",
+    "duration": "Время поездки",
+    "bookTrip": "Заказать поездку",
+  
+    "displayOnMap": "Паказать на карте",
+    "recentAddresses": "Недавние Адреса",
+  
+    "address": "Адрес",
+    "country": "Страна",
+    "nextBookingDetails": "Далее : Детали бронирования",
+
+    "btCanceled": "Бронирование такси отменено"
+  
+  }

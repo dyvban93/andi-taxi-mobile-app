@@ -98,7 +98,7 @@ class BookingTaxiAddressWidget extends StatelessWidget {
                             Container(
                               child: Text(
                                 toPlace == UserPositionPlace.empty 
-                                  ? "" 
+                                  ? ""
                                   : "${toPlace.locality}, ${toPlace.subLocality}, ${toPlace.street}",
                                 style: TextStyle(
                                   fontSize: 17.0

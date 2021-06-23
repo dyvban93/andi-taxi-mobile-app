@@ -32,6 +32,8 @@ class GMapBookingView extends StatelessWidget {
       builder: (context, state) {
         print('[GMAP BOOKING VIEW] $state');
 
+
+      //  return BookingTaxiAddressWidget();
         switch(state.status) {
           case BookingTaxiStatus.home:
             return BookingTaxiHomeWidget();

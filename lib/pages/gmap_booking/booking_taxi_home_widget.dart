@@ -48,7 +48,7 @@ class BookingTaxiHomeWidget extends StatelessWidget {
                   // controller: editingController,
                   decoration: InputDecoration(
                     // labelText: "Search",
-                    hintText: "Search",
+                    hintText: "Where are you going ?",
                     prefixIcon: Icon(
                       Icons.search,
                       color: Color(0xFFC6902E),
@@ -65,12 +65,14 @@ class BookingTaxiHomeWidget extends StatelessWidget {
                   ),
                   onTap: () async {
                     final sessionToken = Uuid().v4();
-                    print('ON TAP TEXTFIEL $sessionToken');
+                    print('ON TAP TEXTFIELD $sessionToken');
                     final Suggestion? result = await showSearch(
                       context: context,
                       delegate: AddressSearch(sessionToken),
                     );
-                    print(result);
+
+                    context.read<BookingTaxiBloc>().add(BookingTaxiStatusChanged(BookingTaxiStatus.address));
+                    print(result.toString());
                   },
                 ),
               ),
@@ -88,7 +90,7 @@ class BookingTaxiHomeWidget extends StatelessWidget {
                   //           child: Image.asset('assets/images/ic_place_grey.png'),
                   //         ),
                   //       ),
-                  //       Expanded(child: 
+                  //       Expanded(child:
                   //       Container(
                   //         padding: EdgeInsets.only(left: 10.0),
                   //         child: Column(

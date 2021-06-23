@@ -62,20 +62,20 @@ abstract class RestClient {
   factory RestClient(Dio dio, { String baseUrl }) = _RestClient;
 
   @POST(APIs.signUpClient)
-  Future<UserCode> SignUpClient(@Field() String name, @Field("phoneNumber") String phone);
+  Future<UserCode> SignUpClient(@Field("name") String name, @Field("phoneNumber") String phone);
   
   @POST(APIs.signUpDriver)
   Future<UserCode> SignUpDriver(
-    @Field() String name, @Field() String phoneNumber,
-    @Field() String rcIdentificationNumber, @Field() String residenceAddress, @Field() String realResidenceAddress,
-    @Field() Car car
+    @Field("name") String name, @Field("phoneNumber") String phoneNumber,
+    @Field("rcIdentificationNumber") String rcIdentificationNumber, @Field("residenceAddress") String residenceAddress, @Field("realResidenceAddress") String realResidenceAddress,
+    @Field("car") Car car
   );
 
   @POST(APIs.signIn)
-  Future<UserCode> SignIn(@Field() String phoneNumber);
+  Future<UserCode> SignIn(@Field("phoneNumber") String phoneNumber);
 
   @POST(APIs.signCode)
-  Future<UserToken> SignCode(@Field() String phoneNumber, @Field() String code);
+  Future<UserToken> SignCode(@Field("phoneNumber") String phoneNumber, @Field("code") String code);
 
   @GET(APIs.lastLocations)
   Future<List<UserPosition>> GetLastLocations();

@@ -26,6 +26,7 @@ class BookingTaxiBloc extends Bloc<BookingTaxiEvent, BookingTaxiState> {
     required BookingTaxiRepository bookingTaxiRepository
   }): _geolocationRepository = geolocationRepository,
       _bookingTaxiRepository = bookingTaxiRepository,
+
       super(const BookingTaxiState.unknown()) {
     
     // var position = _geolocationRepository.determinePosition();
@@ -79,6 +80,7 @@ class BookingTaxiBloc extends Bloc<BookingTaxiEvent, BookingTaxiState> {
 
         // print('CURRENT POSITION $currentPosition');
         // print('LAST POSITION $lastPositions');
+
 
         return BookingTaxiState.address(currentPosition, lastPositions);
         
